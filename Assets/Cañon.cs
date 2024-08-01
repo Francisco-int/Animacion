@@ -39,7 +39,7 @@ public class Cañon : MonoBehaviour
     }
     IEnumerator disparo()
     {
-        yield return new WaitForSeconds(0.55f);
+        yield return new WaitForSeconds(1f);
         shootAudio.Play();
         player.transform.position = point.transform.position;
         player.SetActive(true);
